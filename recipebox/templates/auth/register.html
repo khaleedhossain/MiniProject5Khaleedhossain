@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+{% block header %}Register{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-5">
+    <form method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input class="form-control" name="username" id="username" required autofocus>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input class="form-control" type="password" name="password" id="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
